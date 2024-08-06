@@ -1,57 +1,90 @@
 # galeria
 
-README: Galería de Imágenes Interactiva
-Descripción General
-Esta aplicación web permite a los usuarios crear y gestionar una galería de imágenes de forma dinámica. Las funcionalidades principales incluyen:
+1. Titulo: Galeria de Imágenes Interactiva
 
-Agregar imágenes: Los usuarios pueden agregar nuevas imágenes a la galería proporcionando una URL y un título.
-Eliminar imágenes: Las imágenes se pueden eliminar de la galería con un simple clic.
-Visualizar detalles: Al hacer clic en una imagen, se muestra una vista detallada con mayor tamaño y el título.
-Animaciones: Se utilizan animaciones CSS para mejorar la experiencia del usuario al agregar, eliminar y visualizar imágenes.
-Estructura del Proyecto
-index.html: Contiene la estructura HTML básica de la página, incluyendo los contenedores para la galería, el formulario de entrada y los elementos de cada imagen.
-styles.css: Define los estilos CSS para el diseño general, la apariencia de las imágenes, los botones y las animaciones.
-script.js: Contiene el código JavaScript para manejar la lógica de la aplicación, como la manipulación del DOM, la creación de elementos, la gestión de eventos y las animaciones.
-Instalación y Uso
-Clonar el repositorio:
-Bash
-git clone https://tu-repositorio.git
-Usa el código con precaución.
+2. Descripción del Proyecto:
 
-Abrir en un servidor local: Utiliza un servidor de desarrollo local como Live Server (Visual Studio Code) o un servidor HTTP para abrir el archivo index.html en tu navegador.
-Funcionalidades Detalladas
-Agregar imagen:
-El usuario ingresa la URL de la imagen y un título en los campos correspondientes.
-Al hacer clic en el botón "Agregar", se crea un nuevo elemento div con la imagen, el título y los botones de eliminar y ver detalles.
-Se agrega una animación de entrada suave al nuevo elemento.
-Eliminar imagen:
-Al hacer clic en el botón "Eliminar" de una imagen, se elimina el elemento div correspondiente de la galería.
-Se agrega una animación de salida suave al elemento antes de eliminarlo.
-Ver detalles:
-Al hacer clic en el botón "Ver detalles" de una imagen, se muestra una vista modal o una sección expandida con la imagen a mayor tamaño y el título.
-Se utiliza una animación para ampliar la imagen.
-Tecnologías Utilizadas
-HTML: Estructura básica de la página.
-CSS: Estilos y diseño de la página, incluyendo animaciones.
-JavaScript: Lógica de la aplicación, manipulación del DOM y eventos.
-Mejoras Futuras
-Almacenamiento persistente: Implementar el almacenamiento de imágenes en el navegador o en un servidor para que los cambios se mantengan al recargar la página.
-Edición de imágenes: Permitir a los usuarios editar el título y la URL de una imagen después de agregarla.
-Carga de imágenes locales: Agregar la posibilidad de cargar imágenes desde el dispositivo local.
-Organización de imágenes: Implementar opciones para organizar las imágenes en álbumes o categorías.
-Contribuciones
-Las contribuciones son bienvenidas. Si encuentras algún error o deseas agregar nuevas funcionalidades, por favor, crea un pull request.
+Desarrolla una aplicación web que permita a los usuarios explorar una galeria de imágenes. Los usuarios podrán agregar nuevas imágenes a la galeria, eliminar imágenes existentes y visualizar detalles de cada imagen al hacer clic en ella. Además, la aplicación debe incluir animaciones para la carga y eliminación de imágenes, asi como para las interacciones del usuario.
 
-Licencia
-Este proyecto está bajo la licencia [Especificar la licencia, por ejemplo, MIT].
+3. Requisitos del Proyecto:
 
-Añade más detalles específicos a este README:
+3.1. Estructura HTML y Estilos
 
-Ejemplos de código: Incluye fragmentos de código relevantes para explicar cómo se implementan las diferentes funcionalidades.
-Capturas de pantalla: Agrega imágenes que muestren la interfaz de usuario y las animaciones.
-Instrucciones de desarrollo: Si es necesario, proporciona instrucciones detalladas sobre cómo configurar el entorno de desarrollo.
-Considera utilizar una herramienta como GitHub Pages para desplegar tu aplicación y compartirla con otros.
+Estructura HTML:
 
-Adapta este README a tu proyecto específico y asegúrate de que sea claro, conciso y fácil de entender para cualquier persona que quiera contribuir o utilizar tu aplicación.
+Una <div> principal para contener la galeria.
 
-¿Te gustaría que te ayude a crear un README más detallado para una sección en particular?
+Un campo de entrada <input> para la URL de la imagen y un '<input>" para el título de la imagen.
+
+Un botón <button> para añadir la imagen a la galeria.
+
+Un contenedor <div>" para mostrar las imágenes en miniatura.
+
+✓ Cada imagen en la galería debe estar en un elemento <div> con una clase especifica y contener una imagen <img>, un titulo <h3>", un botón para eliminar y un botón para ver detalles.
+
+Estilos CSS:
+
+Estilos básicos para las imágenes en miniatura y el contenedor de la galeria.
+
+✔Estilos para los botones y los detalles de las imágenes.
+
+Transiciones y animaciones para la aparición, eliminación y ampliación de las imágenes.
+
+3.2. Inserción de Elementos en el DOM Administración de Nodos:
+
+✔ Implementa una función que, al hacer clic en el botón de añadir Imagen, cree un nuevo elemento <div> con una imagen <img>', un titulo <h3>, y dos botones (uno para eliminar y otro para ver detalles). Añade este nuevo elemento al contenedor de la galeria.
+
+Propiedades para Modificación de Elementos:
+
+Implementa funciones que permitan modificar el titulo y la URL de una imagen existente al
+
+hacer clic en el botón correspondiente. Utiliza textContent' y 'src' para cambiar el titulo y la
+
+imagen. Propiedades de inserción Adyacente:
+
+Añade la nueva imagen antes o después de una imagen existente en la galería según la
+
+selección del usuario. 4. Navegación de Elementos en el DOM
+
+4.1. Navegación y Selección de Elementos:
+
+implementa una función que, al hacer clic en una imagen, muestre una vista previa en un modal o en una sección dedicada con detalles adicionales. Utiliza querySelector para seleccionar la imagen y mostrar sus detalles.
+
+4.2. Manipulación de Clases y Estilos:
+
+elementos de la galeria cuando se
+
+Usa classlist para añadir ro o quitar seleccionen o ellminen. Por ejemplo, resalta una imagen cuando se haga cite en ella
+
+clases de los
+
+5. Animación de Elementos del DOM 5.1. Animación de de Inserción y Eliminación
+✔ Implementa animaciones suaves para cuando una imagen se añada o elimine de la galería. Utiliza 'CSS transitions para cambiar la opacidad o el tamaño de los elementos durante la inserción y eliminación.
+
+5.2. Animación de Ampliación y Detalles:
+
+Crea una animación que amplíe la imagen cuando se haga clic en el botón de ver detalles. Utiliza 'requestAnimationFrame' o 'CSS transitions' para una animación suave que muestre imagen en tamaño completo.
+
+6. Instrucciones para Implementación:
+
+6.1. HTML:
+
+Crea el archivo 'index.html" con la estructura básica mencionada.
+
+Asegúrate de tener los campos de entrada, el botón de añadir, el contenedor de la galería y los elementos para cada imagen.
+
+6.2.CSS:
+
+✔ Define los estilos en 'styles.css' para el contenedor de la galería, las imágenes en miniatura, los botones y las animaciones deseadas. Incluye estilos para la ampliación de imágenes y transiciones para los efectos de aparición y desaparición.
+
+6.3.JavaScript:
+
+✔ Escribe el código en 'script.js' para manejar la inserción y eliminación de imágenes, la modificación de los detalles de las imágenes y la navegación entre imágenes.
+
+✔ Implementa las funciones para agregar nuevas imágenes, eliminar imágenes, mostrar detalles de imágenes y animar los cambios en la galería.
+
+7. Entrega del Proyecto:
+
+✓ El proyecto debe ser entregado con los archivos 'index.html', 'styles.css', y 'script.js organizados en una estructura de directorio clara.
+
+✓ Incluye comentarios en el código para explicar las funciones y la lógica implementada.
