@@ -4,9 +4,9 @@
     --GRIS: #e0e0e0;
     --VERDE_BTN: #b32a00;
     --VERDE_BTN_ACTIVO: #7a0e00;
-    --ROJO_BTN: #ff3333;
-    --ROJO_BTN_ACTIVO: #cc0000;
-    --AMARILLO_GRADIENTE: #ff4000;
+    --AZUL_BTN: #3352ff;
+    --AZUL_BTN_ACTIVO: #000acc;
+    --AZUL_GRADIENTE: #0040ff; /* Cambiado de AMARILLO_GRADIENTE a AZUL_GRADIENTE */
 }
 
 * {
@@ -173,7 +173,7 @@ input {
 
 .logo h1 {
     font-size: xxx-large;
-    background: linear-gradient(to right, var(--AMARILLO_GRADIENTE), rgb(39, 39, 39));
+    background: linear-gradient(to right, var(--AZUL_GRADIENTE), rgb(39, 39, 39)); /* Cambiado de AMARILLO_GRADIENTE a AZUL_GRADIENTE */
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
@@ -261,7 +261,7 @@ a {
 
 .img_added_info button {
     color: white;
-    background-color: var(--ROJO_BTN);
+    background-color: var(--AZUL_BTN); /* Cambiado de ROJO_BTN a AZUL_BTN */
     border: none;
     border-radius: 3px;
     padding: 10px;
@@ -274,6 +274,6 @@ a {
 }
 
 .img_added_info button:active {
-    color: var(--ROJO_BTN_ACTIVO);
+    color: var(--AZUL_BTN_ACTIVO); /* Cambiado de ROJO_BTN_ACTIVO a AZUL_BTN_ACTIVO */
     transform: scale(0.95); /* Ajustar el tamaño para el efecto activo */
 }
