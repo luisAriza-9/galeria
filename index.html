@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body class="flex">
+    <aside class="flex flex_col wrap justify_space_between">
+        <section class="flex_grow_1">
+            <h2>Carrousel Imágenes Web</h2>
+            <div class="form flex flex_col">
+                <h3>Ingresar URL de la Imagen</h3>
+                <input id="url" type="url" placeholder="URL" aria-label="URL de la imagen" />
+                <span>
+                    <strong>*Formatos soportados:</strong> WEBP, AVIF, JPEG, GIF, PNG, APNG, SVG, BMP, ICO, TIFF, XBM. (Y sus variaciones)
+                </span>
+                <h3>Título de la Obra</h3>
+                <input id="title" type="text" placeholder="" aria-label="Título de la obra" />
+                <button id="add_button" class="all_c pos_rela" aria-label="Añadir al carrusel">Añadir al carrousel</button>
+            </div>
+        </section>
+        <section class="flex flex_col align_center selectDisable">
+            <div class="logo flex all_center pos_rela centrar_absoluto">
+                
+                <h1 class="texto_gradiente pos_rela">LE Galerie</h1>
+            </div>
+        </section>
+    </aside>
+    <main class="flex flex_grow_1 pos_rela">
+        <div class="arrow_box left selectDisable hidden">
+            <img class="selectDisable arrow" src="https://cdn-icons-png.flaticon.com/512/467/467274.png" alt="Flecha izquierda" draggable="false" />
+        </div>
+        <p class="advice flex pos_abs all_center centrar_absoluto">
+            Que imagen vas Añadir ;)
+        </p>
+        <div class="imgs flex pos_rela">
+            <div class="img_added prev flex_col pos_rela"></div>
+            <div class="img_added current flex_col pos_rela"></div>
+            <div class="img_added next flex_col pos_rela"></div>
+        </div>
+        <div class="arrow_box right selectDisable hidden">
+            <img class="selectDisable arrow" src="https://cdn-icons-png.flaticon.com/512/467/467282.png" alt="Flecha derecha" draggable="false" />
+        </div>
+    </main>
+</body>
+</html>
